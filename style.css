@@ -1,0 +1,195 @@
+/* importing google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    transition: 0.3s;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.mainBox{
+   min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-image: url("./torn-blue-paper-revealing-question-mark-on-yellow-paper-concept-of-questions-faq-qa-problem-riddle-and-quiz-background-R0AT2Y.jpg");
+}
+
+/* Quiz Form */
+#main {
+    width: 40%;
+    border: 1px solid black;
+    padding: 15px 8px;
+  background-color: #ebce4e
+  ;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+#logo{
+    border-bottom: 2px solid white;
+    padding: 8px;
+    color: #322c0c;
+    text-align: center;
+}
+#main #login{
+    width: 100%;
+
+}
+#main #login input{
+    width: 100%;
+    display: block;
+    height: 40px;
+    outline: none;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color:transparent ;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.788);
+    background-color: white;
+  
+}
+
+
+#main #login button{
+    display: block;
+    margin-left: auto;
+    width: 120px;
+    height: 40px;
+    margin-top: 10px ;
+    margin-bottom: 10px ;
+    background-color: #322c0c;
+    color: white;
+    font-size: large;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+/* Quiz Form Complete */
+
+/* /////QUIZ QUESTION AND OPTION START//// */
+.quizQues{
+   width: 100%;
+    border-radius: 8px 8px 0 0 ;
+    background-color: #ebce4e;
+}
+.top{
+    width: 100%;
+   padding: 8px;
+    background-color: #322c0c;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 8px 8px 0 0 ;
+
+}
+
+#ques{
+    width: 100%;
+    padding: 8px;
+    color: #322c0c;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.options{
+    list-style: none;
+    width: 100%;
+    color: #322c0c;
+    border-bottom: 2px solid #1D976C;
+    font-size: large;
+    padding: 8px;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-family: cursive;
+    }
+    #ques-num{
+        color: #322c0c;
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        
+    }
+    .btn{
+        width: 120px;
+        height: 40px;
+        background-color: #322c0c;
+        color: white;
+        font-size: medium;
+        padding: 3px;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+      }
+/* Result */
+ #resultDiv{
+       background-color: #ebce4e;
+        border: 2px dashed #322c0c;
+        width: 40%;
+        padding: 8px;
+    }
+    h1, #Total{
+    color: #1D976C;
+    font-size: 30px;
+    margin: 10px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    }
+    h2{
+    margin: 10px 5px ;
+    color: #322c0c;
+    font-family: cursive;
+    }
+    p {
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+        color: #02bee4;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    #correct{
+        border:2px solid #3e8642 ;
+    background-image:linear-gradient(to right, #1D976C,#93F9B9);
+    color: black;
+    }
+    #wrong{
+        border:2px solid  #a33c3c;
+        background-image: linear-gradient(to right , #FF416C , #f79280);
+        color: black;
+    }
+
+/* js related */
+.correct{
+    
+    border:2px solid #3e8642 ;
+    background-image:linear-gradient(to right, #1D976C,#93F9B9);
+    color: black;
+}
+.wrong{
+   
+    border:2px solid  #a33c3c;
+    background-image: linear-gradient(to right , #FF416C , #f79280);
+    color: black;
+}
+
+
+.disabled{
+    pointer-events: none;
+}
+.hide{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    #main,#resultDiv{
+        width: 100%;
+    }
+}
